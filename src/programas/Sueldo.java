@@ -6,7 +6,7 @@ public class Sueldo {
     public static void main(String[] args) {
      // Declarar variables
      String empleado;
-     double ht, th, sb, descuento, sn;
+     double ht, th, sb, descuento, sn, ds;
     // Generar objeto de lectura
     Scanner lectura= new Scanner (System.in);
     //Entrada de datos
@@ -20,10 +20,12 @@ public class Sueldo {
     sb=ht*th;
     descuento=sb*0.13;
     sn=sb-descuento;
+    ds= sn-sb;
     //SALIDA DE DATOS
     System.out.println("El sueldo bruto es: S/."+sb);
     System.out.println("El descuento es: S/. "+descuento);
     System.out.println("El sueldo neto es: S/."+sn);
+    System.out.println("La diferencia entre el sueldo neto y sueldo bruto es: S/."+ds);
     //Finalizacion
     }
 }
